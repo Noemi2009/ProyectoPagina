@@ -92,15 +92,38 @@ header nav ul li .caret {
 	margin-right:0px;
 }
 .top-social{
-	margin: 40px 30px 15px 50px;
+	flex:1 1 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 30px;
+}
+.top-social a {
+	text-decoration: none;
 }
 .top-social a span{
-	color: #000000;
-	
+	font-size: 25px;
+	color:#000;
+	padding: 0 5px;
+
+}
+.top-social a i{
+	font-size: 29px;
+	color:#000;
+	padding: 0 5px;
 }
 .top-social a span:hover{
+	color:#55a630;
+}
+.top-social i:hover{
+	color:#55a630;
+}
+.whatsapp img{
+	width: 50px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 
-	color: #55a630;
 }
 /*contenedor-titulo*/
 .titulo{
@@ -145,13 +168,18 @@ header nav ul li .caret {
 /*Seccion*/
 .proyectos{
 	padding: 60px 0;
-	border-top: 8px solid #cdeac0;
+	
 }
 
-
+.proyectos2{
+	padding: 60px 0;
+	background: rgba(11, 76, 101,1);
+	color: #fff;
+	
+}
 .contenedor-proyectos{
-	width: 90%;
-	margin: 10px auto;
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -160,6 +188,7 @@ header nav ul li .caret {
 .contenido{
 	width: 60%;
 	float: left;
+	margin-left: 20px;
 
 }
 .video-contenido{
@@ -171,6 +200,90 @@ header nav ul li .caret {
 	width: 100%;
 
 }
+/* ------------------------- */
+/* Estilos CSS del Reproductor */
+/* ------------------------- */
+.fm-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+
+.fm-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: #2d5f85;
+}
+
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #1d87d8;
+}
+
+.fm-video .vjs-slider {
+	background: #2d5f85;
+}
+
+.video-js:hover .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+}
+
+.fm-video .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 100%;
+	border:none;
+}
+
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
+}
+/*Portafolio*/
+.portafolio{
+    background: rgba(11, 76, 101,1);;
+    padding: 60px 0;
+}
+.contenedor-portafolio{
+	width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color:#fff;
+    font-size: 20px;
+}
+
+.portafolio .portafolio-textos p{
+    color: #909090;
+    font-size: 15px;
+    margin:20px 0 0 0;
+}
+
+.portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portafolio .galeria .fotos{
+    width: 30%;
+    margin-bottom:20px;
+}
+
+.portafolio .galeria .fotos img{
+    width: 100%;
+    height:210px;
+    border-radius: 5px;
+}
+.portafolio .galeria .fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
+
 /* footer */
 
 footer{
@@ -206,7 +319,7 @@ footer{
 
 .titulo-final{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px 0 0 0;
     color: #9e9797;
 }
@@ -290,6 +403,9 @@ footer{
 	.top-social{
 		display: none;
 	}
+	.contenedor-titulo .texto-contenedor{
+		font-size: 18px;
+	}
 	/*FOOTER*/
 	.contenedor-footer{
         flex-direction: column;
@@ -312,7 +428,45 @@ footer{
     }
 
     .titulo-final{
-        font-size: 20px;
+        font-size: 16px;
     }
+
+}
+@media screen and (max-width:630px){
+	.contenedor-titulo .titulo-contenedor{
+		font-size: 40px;
+	}
+   
+    .portafolio .galeria .fotos{
+        width:49%;
+    }
+}
+
+
+@media only screen and (max-width: 576px){
+	.contenedor-proyectos{
+		text-align: center;
+		display: block;
+
+	}
+	.contenido{
+		width: 100%;
+		float: none;
+		padding: 20px 0;
+	}
+	.video-contenido{
+		width: 100%;
+		float: none;
+
+
+	}
+}
+@media screen and (max-width: 350px){
+	.contenedor-titulo .titulo-contenedor{
+		font-size: 25px;
+	}
+	.contenedor-titulo .texto-contenedor{
+		font-size: 15px;
+	}
 
 }

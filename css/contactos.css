@@ -118,6 +118,13 @@ header nav ul li .caret {
 .top-social i:hover{
 	color:#55a630;
 }
+.whatsapp img{
+	width: 50px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
+}
 /*contenedor-titulo*/
 .titulo{
 	background:linear-gradient( 
@@ -130,9 +137,13 @@ header nav ul li .caret {
 	height: 350px;
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;}
+	background-attachment: fixed;
+
+
+}
 
 .contenedor-titulo{
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -155,14 +166,15 @@ header nav ul li .caret {
     margin-bottom:30px;
     font-size:20px;
     text-align: center;
+    padding: 10px 50px;
+    font-weight: bold;
 }
 /*formulario*/
 
 .content {
 
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     padding: 1.5em;
 }
 
@@ -172,6 +184,7 @@ ul {
 }
 
 .contact-wrapper {
+	overflow: hidden;
 	display: grid;
     grid-template-columns: 2fr 1fr;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
@@ -250,7 +263,7 @@ footer{
 
 .contenedor-footer{
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 20px;
@@ -274,7 +287,7 @@ footer{
 
 .titulo-final{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px 0 0 0;
     color: #9e9797;
 }
@@ -359,9 +372,8 @@ footer{
 		display: none;
 	}
 
-	.contenedor-titulo .titulo-contenedor {
-		font-size: 50px;
-		
+	.contenedor-titulo .texto-contenedor{
+		font-size: 18px;
 	}
 	/*CONTACTO*/
 	
@@ -378,11 +390,7 @@ footer{
     .contact-info p {
         text-align: center;
     }
-    .contact-info iframe{
-    	position: relative;
-    	left: 60px;
-    
-    }
+   
 	/*FOOTER*/
 	.contenedor-footer{
         flex-direction: column;
@@ -408,5 +416,21 @@ footer{
         font-size: 20px;
     }
 
+
+}
+@media screen and (max-width:630px){
+	.contenedor-titulo .titulo-contenedor{
+		font-size: 40px;
+	}
+   
+   
+}
+@media screen and (max-width: 350px){
+	.contenedor-titulo .titulo-contenedor{
+		font-size: 25px;
+	}
+	.contenedor-titulo .texto-contenedor{
+		font-size: 15px;
+	}
 
 }

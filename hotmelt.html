@@ -5,264 +5,172 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Hotmelt</title>
-	<link rel="stylesheet" href="css/hotmelt.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/hotmelt.css">
+    <link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/incon.css">
 	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
 	<script src="https://kit.fontawesome.com/898f359485.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+  	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Francois+One&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LHQYSRYCQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7LHQYSRYCQ');
+    </script>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
-
 	<header>
-		
 		<div class="logo">
-				<a href="index.html"><img src="img/LOGO-RENTAPACK-1.jpg" alt=""></a>
-			
+			<a href="index.html"><img src="img/logo-rentapackec.jpeg" alt="Rentapackec Cia Ltda."></a>
 		</div>
 		<div class="menu_bar">
 			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menú</a>
 		</div>
- 
 		<nav>
-			
 			<ul>
 				<li><a href="index.html"><span class="icon-home3"></span>Inicio</a></li>
 					<li class="submenu">
-						<a href="productos.html"><span class="icon-stack"></span>Productos <span class="caret icon-ctrl"></span></a>
+						<a href="#"><span class="icon-stack"></span>Productos <span class="caret icon-ctrl"></span></a>
 						<ul class="children">
 							<li><a href="hotmelt.html">Hotmelt</a></li>
 							<li><a href="repuestos.html">Repuestos</a></li>
 							<li><a href="empaques.html">Empaques</a></li>
+                            <li><a href="acero.html">Trabajos en Acero Inoxidable</a></li>
 							
 						</ul>
 					</li>
 					<li><a href="proyectos.html"><span class="icon-briefcase"></span>Proyectos</a></li>
 					<li><a href="mantenimiento.html"><span class="icon-cogs"></span>Asistencia Técnica/Mantenimieto</a></li>
 					<li><a href="contactos.html"><span class="icon-envelop"></span>Contactos</a></li>
-					
 			</ul>
 			
 		</nav>
 		<div class="top-social">
-			<div><a href="flehttps://www.facebook.com/Rentapack-Cia-Ltda-109836263942260/" target="_blank"><span class="icon-facebook2"></span></a></div>
-			<div><a href="https://api.whatsapp.com/send?phone=593983346407" target="_blank"><i class="fab fa-whatsapp-square"></i></a></div>		
+			<div><a href="https://www.facebook.com/Rentapack-Cia-Ltda-109836263942260/" target="_blank"><span class="icon-facebook2"></span></a></div>
+			<div><a href="https://www.instagram.com/rentapack/?hl=es-la" target="_blank" ><span class="icon-instagram"></span></a></div>
 		</div>
-
 	</header>
+	<div class="whatsapp"><a href="https://api.whatsapp.com/send?phone=593983346407" target="_blank"><img src="img/whatsapp-square-brands.svg" alt=""></a></div>
 
 	<div class="contenedor">
 		<div class="encabezado">
 			<h1>Aplicacion Hotmelt- Adhesivo Caliente</h1>
-			<p>Llamanos y nuetros ascesores cotizaran tu pedido</p>
+			<p>Llámanos y nuestros asesores cotizarán tu pedido</p>
 		</div>
-
-		<form action="">
-			<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-		</form>
-
-		<div class="categorias" id="categorias">
-			<a href="#" class="activo">Todos</a>
-			<a href="#">Tanques</a>
-			<a href="#">Mangueras</a>
-			<a href="#">Pistolas-Manuales</a>
-			<a href="#">Pistolas-Automáticas</a>
-		
-		</div>
-
-		<section class="grid" id="grid">
-			<div class="item" 
-				 data-categoria="tanques"
-				 data-etiquetas="tanques perfect melt"
-				 data-descripcion="1.- Perfect melt (4,8 Kg )."
-			>
-				<div class="item-contenido">
-					<img src="img/tanque-hotmelt-1.png" alt="tanque-hotmelt">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="tanques"
-				 data-etiquetas="tanques perfect melt"
-				 data-descripcion="2.- Perfect melt S (8,12,20 Kg)."
-			>
-				<div class="item-contenido">
-					<img src="img/tanque-hotmelt-2.png" alt="tanque-hotmelt">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="tanques"
-				 data-etiquetas="tanques press melt"
-				 data-descripcion="3.- Press Melt PUT."
-			>
-				<div class="item-contenido">
-					<img src="img/tanque-hotmelt-3.png" alt="tanque-hotmelt">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="tanques"
-				 data-etiquetas="tanques "
-				 data-descripcion="4.- Max Melt."
-			>
-				<div class="item-contenido">
-					<img src="img/tanque-hotmelt-4.png" alt="tanque-hotmelt">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="magueras"
-				 data-etiquetas="mangueras"
-				 data-descripcion="5.- manguera."
-			>
-				<div class="item-contenido">
-					<img src="img/manguera-1.png" alt="manguera">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="mangueras"
-				 data-etiquetas="mangueras"
-				 data-descripcion="6.-manguera ."
-			>
-				<div class="item-contenido">
-					<img src="img/manguera-2.png" alt="manguera">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="mangueras"
-				 data-etiquetas="mangueras"
-				 data-descripcion="7.-manguera."
-			>
-				<div class="item-contenido">
-					<img src="img/manguera-3.png" alt="manguera">
-				</div>
-			</div>
-
-			<div class="item" 
-				 data-categoria="pistolas-manuales"
-				 data-etiquetas="pistola manual"
-				 data-descripcion="8.-Pistola manual de 3 onzas."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-manual1.png" alt="pistola-manual">
-				</div>
-			</div>
-
-			<div class="item"
-				 data-categoria="pistolas-manuales"
-				 data-etiquetas="pistola manual"
-				 data-descripcion="9.- Pistola manual de 5 onzas.
-				 	"
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-manual2.png" alt="pistola-manual">
-				</div>
-			</div>
-
-			<div class="item" 
-				 data-categoria="pistolas-manuales"
-				 data-etiquetas="pistola manual"
-				 data-descripcion="10.-Pistolas manuales para aplicación con equipo hotmelt."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-manual-3.png" alt="pistola-manual">
-				</div>
-			</div>
-			<div class="item" 
-				 data-categoria="pistolas-manuales"
-				 data-etiquetas="pistola manual"
-				 data-descripcion="11.-Aplicación tipo Swril."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-manual-4.png" alt="pistola-manual">
-				</div>
-			</div>
-			<div class="item" 
-				 data-categoria="pistolas-automáticas"
-				 data-etiquetas="pistola automatica"
-				 data-descripcion="11.-Aplicación tipo Swril."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-automatica-1.png" alt="pistola-automatica">
-				</div>
-			</div>
-			<div class="item" 
-				 data-categoria="pistolas-automáticas"
-				 data-etiquetas="pistola automatica"
-				 data-descripcion="12.-pistola automatica."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-automatica-2.png" alt="pistola-automatica">
-				</div>
-			</div>
-			<div class="item" 
-				 data-categoria="pistolas-automáticas"
-				 data-etiquetas="pistola automatica"
-				 data-descripcion="13.-."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-automatica-3.png" alt="pistola-automatica">
-				</div>
-			</div>
-			<div class="item" 
-				 data-categoria="pistolas-automáticas"
-				 data-etiquetas="pistola automatica"
-				 data-descripcion="14.-."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-automatica-4.png" alt="pistola-automatica">
-				</div>
-			</div>
-			<div class="item" 
-				 data-categoria="pistolas-automáticas"
-				 data-etiquetas="pistola automatica"
-				 data-descripcion="15.-."
-			>
-				<div class="item-contenido">
-					<img src="img/pistola-automatica-5.png" alt="pistola-automatica">
-				</div>
-			</div>
-		</section>
-
-		<section class="overlay" id="overlay">
-			<div class="contenedor-img">
-				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-				<img src="" alt="">
-			</div>
-			<p class="descripcion"></p>
-		</section>
-	</div>
+        
+        <div class="titulo">
+        <h1>TANQUES</h1>
+        </div>
+        <div class="gallery">
+        <a href="img/tanque-hotmelt-1.png" data-lightbox="images" data-title="Perfect melt (4,8 Kg )">
+            <img src="img/tanque-hotmelt-1.png" alt="Perfect melt">
+        </a>
+        <a href="img/tanque-hotmelt-2.png" data-lightbox="images" data-title="Perfect melt S (8,12,20 Kg)">
+            <img src="img/tanque-hotmelt-2.png" alt="Perfect melt S">
+        </a>
+        <a href="img/tanque-hotmelt-3.png" data-lightbox="images" data-title="Press Melt PUT">
+            <img src="img/tanque-hotmelt-3.png" alt="">
+        </a>
+        <a href="img/tanque-hotmelt-4.png" data-lightbox="images" data-title="Max Melt">
+            <img src="img/tanque-hotmelt-4.png" alt="">
+        </a>            
+        </div>
+        <section>
+            <div class="titulo">
+        <h1>MANGUERAS</h1>
+        </div>
+        <div class="gallery">
+        <a href="img/manguera-1.png" data-lightbox="images" data-title="Manguera">
+            <img src="img/manguera-1.png" alt="mangueras hotmelt">
+        </a>
+        <a href="img/manguera-2.png" data-lightbox="images" data-title="Manguera">
+            <img src="img/manguera-2.png" alt="">
+        </a>
+        <a href="img/manguera-3.png" data-lightbox="images" data-title="Manguera">
+            <img src="img/manguera-3.png" alt="">
+        </a>                   
+        </div>
+        </section>      
+        <div class="titulo">
+        <h1>PISTOLAS MANUALES</h1>
+        </div>
+        <div class="gallery">
+            <a href="img/pistola-manual1.png" data-lightbox="images" data-title="Pistola manual de 3 onzas">
+                <img src="img/pistola-manual1.png" alt="">
+            </a>
+            <a href="img/pistola-manual2.png" data-lightbox="images" data-title="Pistola manual de 5 onzas">
+                <img src="img/tanque-hotmelt-2.png" alt="">
+            </a>
+            <a href="img/pistola-manual-3.png" data-lightbox="images" data-title="Press Melt PUT">
+                <img src="img/pistola-manual-3.png" alt="">
+            </a>
+            <a href="img/pistola-manual-4.png" data-lightbox="images" data-title="Max Melt">
+                <img src="img/pistola-manual-4.png" alt="">
+            </a>            
+        </div>
+        <section>
+            <div class="titulo">
+            <h1>PISTOLAS MANUALES</h1>
+            </div>
+            <div class="gallery">
+            <a href="img/pistola-manual1.png" data-lightbox="images" data-title="Pistola manual de 3 onzas">
+                <img src="img/pistola-manual1.png" alt="">
+            </a>
+            <a href="img/pistola-manual2.png" data-lightbox="images" data-title="Pistola manual de 5 onzas">
+                <img src="img/pistola-manual2.png" alt="">
+            </a>
+            <a href="img/pistola-manual-3.png" data-lightbox="images" data-title="Press Melt PUT">
+                <img src="img/pistola-manual-3.png" alt="">
+            </a>
+            <a href="img/pistola-manual-4.png" data-lightbox="images" data-title="Max Melt">
+                <img src="img/pistola-manual-4.png" alt="">
+            </a>            
+            </div>
+        </section>        
+        <div class="titulo">
+            <h1>PISTOLAS AUTOMÁTICAS</h1>
+            </div>
+            <div class="gallery">
+            <a href="img/pistola-automatica-1.png" data-lightbox="images" data-title="Rapid II 18S">
+                <img src="img/pistola-automatica-1.png" alt="">
+            </a>
+            <a href="img/pistola-automatica-2.png" data-lightbox="images" data-title="H342 90LL">
+                <img src="img/pistola-automatica-2.png" alt="">
+            </a>
+            <a href="img/pistola-automatica-3.png" data-lightbox="images" data-title="H341 40LL">
+                <img src="img/pistola-automatica-3.png" alt="">
+            </a>
+            <a href="img/pistola-automatica-4.png" data-lightbox="images" data-title="H301 44">
+                <img src="img/pistola-automatica-4.png" alt="">
+            </a>            
+            </div>        
+    </div>   
+	
 	<footer>
 		<div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Telefono</h4>
-                <p>(2) 3412-985</p>
+                <h4>Teléfono</h4>
+                <p>(2) 2534-281</p>
             </div>
             <div class="content-foo">
                 <h4>Email</h4>
-                <p>rentapack@outlook.com</p>
+                <p>ventas@rentapackec.com</p>
             </div>
             <div class="content-foo">
-                <h4>Direccion</h4>
-                <p>Aurelio Aguilar N53-35 y Miguel Cruz</p>
+                <h4>Dirección</h4>
+                <p>Jacinto de Evia N60-190 y Flavio Alfaro</p>
             </div>
         </div>
-        <h2 class="titulo-final">&copy; Rectapack Cia. Lta. | Quito-Ecuador</h2>
+        <h2 class="titulo-final">&copy; Rentapack Cia. Ltda. | Quito-Ecuador</h2>
 	</footer>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 
-
-	<script  src=" https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script  src=" https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
-	<script src="js/gird.js"></script>	
-
-	
-	
-	
-	
-	
 </body>
 </html>
